@@ -1,0 +1,587 @@
+
+.home-screen {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 38px;
+    width: 1280px;
+    box-sizing: border-box;
+}
+
+.home-screen .content-craft-ai {
+    margin: 7px 7px 8px 0;
+    display: inline-block;
+    width: 1054px;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 12px;
+    color: #FC7138;
+}
+
+.home-screen .line-3 {
+    background: #E2DADA;
+    position: absolute;
+    left: 271.5px;
+    bottom: 0px;
+    width: 1px;
+    height: 781px;
+}
+
+.home-screen .tailored-for-purpose-perfect-for-engagement {
+    margin: 0 33.4px;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    color: #949494;
+}
+
+.home-screen .unchecked-checkbox {
+    background: url('../assets/images/UncheckedCheckbox.png') 50% / contain no-repeat;
+    margin-right: 16.7px;
+    width: 20px;
+    height: 20px;
+}
+
+.home-screen .unchecked-checkbox-1 {
+    background: url('../assets/images/UncheckedCheckbox.png') 50% / contain no-repeat;
+    margin-right: 14.8px;
+    width: 20px;
+    height: 20px;
+}
+
+.home-screen .unchecked-checkbox-2 {
+    background: url('../assets/images/UncheckedCheckbox.png') 50% / contain no-repeat;
+    margin-right: 16.2px;
+    width: 20px;
+    height: 20px;
+}
+
+.home-screen .instagram {
+    margin: 2px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    color: #949494;
+}
+
+.home-screen .twitter {
+    margin: 2px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    color: #949494;
+}
+
+.home-screen .linked-in {
+    margin: 2px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    color: #949494;
+}
+
+.home-screen .write-your-purpose {
+    margin: 0 8px 142px 0;
+    display: inline-block;
+    width: 674.3px;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    color: #949494;
+}
+
+.home-screen .target-audience {
+    margin: 7px 19.3px 8px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+}
+
+.home-screen .select-platform {
+    margin: 2px 8px 2px 0;
+    display: inline-block;
+    width: 104px;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+}
+
+.home-screen .age-group {
+    margin: 1px 8px 3px 0;
+    display: inline-block;
+    width: 83.7px;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    color: #949494;
+}
+
+.home-screen .frame-2 {
+    border-radius: 5px;
+    border: 1px solid #949494;
+    background: #FFFFFF;
+    position: relative;
+    margin-right: 29px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6px 7px 5px 18.3px;
+    width: 137px;
+    box-sizing: border-box;
+}
+
+.home-screen .frame-3 {
+    border-radius: 5px;
+    border: 1px solid #949494;
+    background: #FFFFFF;
+    position: relative;
+    margin-right: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 6px 6px 19.8px;
+    width: 137px;
+    box-sizing: border-box;
+}
+
+.home-screen .gender {
+    margin: 2px 8px 2px 0;
+    display: inline-block;
+    width: 83.2px;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    color: #949494;
+}
+
+.home-screen .frame-4 {
+    border-radius: 5px;
+    border: 1px solid #949494;
+    background: #FFFFFF;
+    position: relative;
+    margin-right: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 7px 6px 18.6px;
+    width: 137px;
+    box-sizing: border-box;
+}
+
+.home-screen .country {
+    margin: 2px 8px 2px 0;
+    display: inline-block;
+    width: 83.4px;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    color: #949494;
+}
+
+.home-screen .frame-5 {
+    border-radius: 5px;
+    border: 1px solid #949494;
+    background: #FFFFFF;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6px 7px 5px 17.2px;
+    width: 137px;
+    box-sizing: border-box;
+}
+
+.home-screen .field {
+    margin: 1px 8px 3px 0;
+    display: inline-block;
+    width: 84.8px;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    color: #949494;
+}
+
+.home-screen .hashtags {
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    color: #949494;
+}
+
+.home-screen .account {
+    margin: 9px 0 8px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Helvetica', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+
+.home-screen .a {
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.home-screen .all-options {
+    margin-bottom: 1px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.home-screen .main-heading {
+    margin: 3px 0 21px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+
+.home-screen .history {
+    margin: 289px 9.5px 0 0;
+    display: inline-block;
+    width: 354.7px;
+    overflow-wrap: break-word;
+    font-family: 'Helvetica', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+
+.home-screen .new-chat {
+    margin: 2px 8px 3px 0;
+    display: inline-block;
+    width: 94.3px;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    color: #949494;
+}
+
+.home-screen .expand-arrow {
+    background: url('../assets/images/ExpandArrow.png') 50% / contain no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.home-screen .expand-arrow-1 {
+    background: url('../assets/images/ExpandArrow.png') 50% / contain no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.home-screen .expand-arrow-2 {
+    background: url('../assets/images/ExpandArrow.png') 50% / contain no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.home-screen .expand-arrow-3 {
+    background: url('../assets/images/ExpandArrow.png') 50% / contain no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.home-screen .enter {
+    background: url('../assets/images/Enter.png') 50% / contain no-repeat;
+    margin-top: 133px;
+    width: 25px;
+    height: 25px;
+}
+
+.home-screen .add-to-chat {
+    background: url('../assets/images/AddToChat.png') 50% / contain no-repeat;
+    width: 21px;
+    height: 21px;
+}
+
+.home-screen .chatbot-1 {
+    background: url('../assets/images/Chatbot1.gif') 50% / cover no-repeat;
+    width: 263px;
+    height: 261px;
+}
+
+.home-screen .im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time {
+    margin: 58px 62.7px 89px 0;
+    text-align: justify;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(90, 88, 88, 0.8);
+}
+
+.im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time {
+    font-family: 'Inter', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.333;
+}
+
+.im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time-sub14 {
+    font-family: 'Inter', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.333;
+    color: #FC7138;
+}
+
+.im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time-sub15 {
+    font-family: 'Inter', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.333;
+}
+
+.home-screen .rectangle-26 {
+    background: #FFFFFF;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+}
+
+.home-screen .unchecked-checkbox-3 {
+    background: url('../assets/images/UncheckedCheckbox.png') 50% / contain no-repeat;
+    margin-right: 17.2px;
+    width: 20px;
+    height: 20px;
+}
+
+.home-screen .facebook {
+    margin: 2px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    color: #949494;
+}
+
+.home-screen .header {
+    border: 1px solid #E2DADA;
+    background: #FFFFFF;
+    position: relative;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 32px 11px 31px;
+    width: 1280px;
+    box-sizing: border-box;
+}
+
+.home-screen .container {
+    border-radius: 5px;
+    border: 1px solid #949494;
+    background: #FFFFFF;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 9px 5px 0;
+    width: 154px;
+    box-sizing: border-box;
+}
+
+.home-screen .container-1 {
+    border-radius: 10px;
+    border: 1px solid #949494;
+    background: #FFFFFF;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 13px 17px 12px 25.7px;
+    width: 750px;
+    box-sizing: border-box;
+}
+
+.home-screen .sign-up {
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.home-screen .log-in {
+    margin: 6px 0 7px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+}
+
+.home-screen .welcome-to-content-craft-ai {
+    margin-bottom: 5px;
+    overflow-wrap: break-word;
+    font-family: 'Helvetica', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 35px;
+    color: #000000;
+}
+
+.welcome-to-content-craft-ai {
+    font-family: 'Helvetica', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.333;
+    color: #FC7138;
+}
+
+.welcome-to-content-craft-ai-sub7 {
+    font-family: 'Helvetica', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.333;
+}
+
+.home-screen .container-2 {
+    margin: 0 0 13px 6.3px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.home-screen .container-3 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.home-screen .container-4 {
+    border-radius: 5px;
+    border: 1px solid #949494;
+    background: #FFFFFF;
+    position: relative;
+    margin-bottom: 16px;
+    padding: 7px 21.3px 8px 21.3px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.home-screen .container-5 {
+    margin-bottom: 19px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.home-screen .container-6 {
+    margin: 0 5px 13px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 636.7px;
+    box-sizing: border-box;
+}
+
+.home-screen .container-7 {
+    position: relative;
+    margin: 0 31px 18px 31px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 897.5px;
+    box-sizing: border-box;
+}
+
+.home-screen .container-8 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.home-screen .container-9 {
+    position: relative;
+    margin: 0 35.8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 1114.2px;
+    box-sizing: border-box;
+}
+
+.home-screen .container-10 {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.home-screen .container-11 {
+    border-radius: 5px;
+    background: #68E1C8;
+    position: relative;
+    padding: 6px 14px 7px 14px;
+    width: 82px;
+    box-sizing: border-box;
+}
+
+.home-screen .container-12 {
+    border-radius: 18px;
+    background: #68E1C8;
+    position: relative;
+    margin-right: 17.1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 7px 11.5px 6px 12.5px;
+    box-sizing: border-box;
+}
+
+.home-screen .container-13 {
+    position: relative;
+    margin: 0 0 45px 285px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.home-screen .container-14 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.home-screen .container-15 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
