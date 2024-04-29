@@ -7,15 +7,17 @@
     font-weight: 700;
     font-size: 12px;
     color: #FC7138;
-  }
-  .sign-up .log-in {
+}
+
+.sign-up .log-in {
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
     font-weight: 700;
     font-size: 14px;
     color: #FFFFFF;
-  }
-  .sign-up .back {
+}
+
+.sign-up .back {
     margin: 2px 0;
     display: inline-block;
     overflow-wrap: break-word;
@@ -23,29 +25,33 @@
     font-weight: 700;
     font-size: 14px;
     color: #000000;
-  }
-  .sign-up .email-placeholder {
+}
+
+.sign-up .email-placeholder {
     border-radius: 10px;
     background: #FFFFFF;
     margin: 0 0.1px 15px 0px;
     width: 451px;
     height: 54px;
-  }
-  .sign-up .password-placeholder {
+}
+
+.sign-up .password-placeholder {
     border-radius: 10px;
     background: #FFFFFF;
     margin: 0 0.1px 15px 0px;
     width: 451px;
     height: 54px;
-  }
-  .sign-up .sign-up-1 {
+}
+
+.sign-up .sign-up-1 {
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
     font-weight: 700;
     font-size: 22px;
     color: #FFFFFF;
-  }
-  .sign-up .email {
+}
+
+.sign-up .email {
     margin: 0 0px 8px 0px;
     display: inline-block;
     align-self: flex-start;
@@ -54,8 +60,9 @@
     font-weight: 700;
     font-size: 14px;
     color: #FFFFFF;
-  }
-  .sign-up .password {
+}
+
+.sign-up .password {
     margin: 0 0px 8px 0px;
     display: inline-block;
     align-self: flex-start;
@@ -64,8 +71,9 @@
     font-weight: 700;
     font-size: 14px;
     color: #FFFFFF;
-  }
-  .sign-up .sign-in-with-google {
+}
+
+.sign-up .sign-in-with-google {
     margin: 5px 0 4px 0;
     display: inline-block;
     overflow-wrap: break-word;
@@ -73,8 +81,9 @@
     font-weight: 700;
     font-size: 14px;
     color: #5A5858;
-  }
-  .sign-up .sign-in-with-linked-in {
+}
+
+.sign-up .sign-in-with-linked-in {
     margin: 5px 0 4px 0;
     display: inline-block;
     overflow-wrap: break-word;
@@ -82,28 +91,32 @@
     font-weight: 700;
     font-size: 14px;
     color: #5A5858;
-  }
-  .sign-up .or {
+}
+
+.sign-up .or {
     margin-right: 11.8px;
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
     font-weight: 700;
     font-size: 14px;
     color: #FFFFFF;
-  }
-  .sign-up .line-2 {
+}
+
+.sign-up .line-2 {
     background: #FFFFFF;
     margin: 8px 0 7px 0;
     width: 208.1px;
     height: 1px;
-  }
-  .sign-up .line-1 {
+}
+
+.sign-up .line-1 {
     background: #FFFFFF;
     margin: 7.5px 7px 7.5px 0;
     width: 208.1px;
     height: 1px;
-  }
-  .sign-up .sign-up-to-create-your-account {
+}
+
+.sign-up .sign-up-to-create-your-account {
     margin: 0 57.6px 46px 0;
     align-self: center;
     overflow-wrap: break-word;
@@ -111,27 +124,31 @@
     font-weight: 700;
     font-size: 22px;
     color: #000000;
-  }
-  .sign-up-to-create-your-account {
+}
+
+.sign-up-to-create-your-account {
     font-family: 'Arial', 'Roboto Condensed';
     font-weight: 700;
     font-size: 22px;
     line-height: 1.333;
     color: #FFFFFF;
-  }
-  .sign-up-to-create-your-account-sub1 {
+}
+
+.sign-up-to-create-your-account-sub1 {
     font-family: 'Arial', 'Roboto Condensed';
     font-weight: 700;
     font-size: 22px;
     line-height: 1.333;
     color: #FC7138;
-  }
-  .sign-up .back-1 {
+}
+
+.sign-up .back-1 {
     background: url('../assets/images/Back.png') 50% / contain no-repeat;
     width: 20px;
     height: 20px;
-  }
-  .sign-up .confirm-password {
+}
+
+.sign-up .confirm-password {
     margin: 0 4px 8px 4px;
     display: inline-block;
     align-self: flex-start;
@@ -140,25 +157,29 @@
     font-weight: 700;
     font-size: 14px;
     color: #FFFFFF;
-  }
-  .sign-up .confirm-password-placeholder {
+}
+
+.sign-up .confirm-password-placeholder {
     border-radius: 10px;
     background: #FFFFFF;
     margin: 0 0.1px 27px 0px;
     width: 451px;
     height: 54px;
-  }
-  .sign-up .google {
+}
+
+.sign-up .google {
     background: url('../assets/images/Google.png') 50% / contain no-repeat;
     width: 25px;
     height: 25px;
-  }
-  .sign-up .linked-in {
+}
+
+.sign-up .linked-in {
     background: url('../assets/images/LinkedIn.png') 50% / contain no-repeat;
     width: 25px;
     height: 25px;
-  }
-  .sign-up-2 {
+}
+
+.sign-up-2 {
     background: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -166,8 +187,9 @@
     padding-bottom: 53px;
     width: 1280px;
     box-sizing: border-box;
-  }
-  .sign-up .home {
+}
+
+.sign-up .home {
     margin: 6px 0 7px 0;
     display: inline-block;
     overflow-wrap: break-word;
@@ -175,8 +197,9 @@
     font-weight: 700;
     font-size: 14px;
     color: #000000;
-  }
-  .sign-up .container {
+}
+
+.sign-up .container {
     border-radius: 10px;
     background: #68E1C8;
     position: relative;
@@ -187,14 +210,16 @@
     padding: 14px 5.2px 14px 0;
     width: 451px;
     box-sizing: border-box;
-  }
-  .sign-up .container-1 {
+}
+
+.sign-up .container-1 {
     margin: 4px 0 5px 0;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-  }
-  .sign-up .container-2 {
+}
+
+.sign-up .container-2 {
     border-radius: 10px;
     border: 1px solid #DFDFDF;
     background: #FFFFFF;
@@ -206,8 +231,9 @@
     padding: 14px 0 15px 14px;
     width: 451px;
     box-sizing: border-box;
-  }
-  .sign-up .header {
+}
+
+.sign-up .header {
     border: 1px solid #E2DADA;
     background: #FFFFFF;
     position: relative;
@@ -218,8 +244,9 @@
     padding: 12px 32px 11px 31px;
     width: 1280px;
     box-sizing: border-box;
-  }
-  .sign-up .sign-uo-account {
+}
+
+.sign-up .sign-uo-account {
     border-radius: 15px;
     border: 1px solid #345E55;
     background: linear-gradient(180deg, #345E55, #68E1C8, #88C9A9, #9FB892, rgba(252, 113, 56, 0.7));
@@ -230,23 +257,26 @@
     padding: 41px 24.9px 17px 26px;
     width: fit-content;
     box-sizing: border-box;
-  }
-  .sign-up .container-3 {
+}
+
+.sign-up .container-3 {
     border-radius: 5px;
     background: #68E1C8;
     position: relative;
     padding: 6px 19px 7px 19px;
     width: 82px;
     box-sizing: border-box;
-  }
-  .sign-up .container-4 {
+}
+
+.sign-up .container-4 {
     margin-bottom: 27px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
-  }
-  .sign-up .container-5 {
+}
+
+.sign-up .container-5 {
     border-radius: 10px;
     border: 1px solid #DFDFDF;
     background: #FFFFFF;
@@ -258,4 +288,4 @@
     padding: 14px 0 15px 14px;
     width: 451px;
     box-sizing: border-box;
-  }
+}
