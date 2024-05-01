@@ -1,12 +1,18 @@
-import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
+import { Controller, Post, Body } from '@nestjs/common';
+import { Gpt2Service } from './app.service';
 
-@Controller()
-export class AppController {
-  constructor(private readonly appService: AppService) {}
+@Controller('gpt2')
+export class Gpt2Controller {
+  constructor(private readonly gpt2Service: Gpt2Service) {}
 
-  @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  @Post('generateText')
+  async generateText(@Body('prompt') prompt: string): Promise<string[]> {
+    try {
+      const generatedTexts = await this.gpt2Service.generateText(prompt);
+      return generatedTexts;
+    } catch (error) {
+      // Handle error appropriately
+      throw new Error('Failed to generate text: ' + error.message);
+    }
   }
 }
