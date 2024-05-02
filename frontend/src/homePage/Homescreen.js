@@ -39,8 +39,9 @@ export default function HomeScreen() {
                     </div>
                 </div>
                 <div className="main-heading">
-                    <p className="welcome-to-content-craft-ai">
-                        <span className="welcome-to-content-craft-ai-sub-7"></span><span></span>
+                    <p className="welcome-to-content-craft-ai"><span className='welcome-to- '>Welcome to </span>
+                ContentCraft.ai
+                        <span className="welcome-to-content-craft-ai-sub-7"></span>
                     </p>
                     <span className="tailored-for-purpose-perfect-for-engagement">
                         Tailored for Purpose, Perfect for Engagement
@@ -49,7 +50,7 @@ export default function HomeScreen() {
             </div>
             <div className="container-13">
                 <p className="im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time">
-                    <span className="im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time-sub-15"></span><span className="im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time-sub-14"></span><span className="im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time-sub-15"></span><span className="im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time-sub-14"></span><span className="im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time-sub-15"></span><span className="im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time-sub-14"></span><span></span>
+                    <span> I'm your <span className='orange'> AI assistant</span>, here to make creating <span className='orange'>engaging content</span> for LinkedIn, Instagram, and Twitter effortless. Just tell me your purpose, target audience, and platform needs, and I'll <span className='orange'>generate personalized</span>, top-notch content for you in no time.</span>
                 </p>
                 <div className="chatbot-1">
                 </div>

@@ -33,7 +33,7 @@
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     color: #949494;
 }
 
@@ -253,11 +253,11 @@
 }
 
 .home-screen .main-heading {
-    margin: 3px 0 21px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     box-sizing: border-box;
+    margin-bottom: 5px;
 }
 
 .home-screen .history {
@@ -272,7 +272,7 @@
 }
 
 .home-screen .new-chat {
-    margin: 2px 8px 3px 0;
+    margin: 2px 8px 3px 11px;
     display: inline-block;
     width: 94.3px;
     overflow-wrap: break-word;
@@ -321,18 +321,26 @@
 
 .home-screen .chatbot-1 {
     background: url('../assets/images/Chatbot1.gif') 50% / cover no-repeat;
-    width: 263px;
-    height: 261px;
+    width: 230px;
+    height: 210px;
 }
 
 .home-screen .im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time {
-    margin: 58px 62.7px 89px 0;
+display: block;
     text-align: justify;
+    margin-right: 50px;
+    width: 340px;
+    line-height: 1.55;
+    height: 114px;
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     color: rgba(90, 88, 88, 0.8);
+}
+.home-screen .im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time .orange{
+color: #FC7138;
+font-weight: 600;
 }
 
 .im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time {
@@ -393,10 +401,9 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 12px 32px 11px 31px;
-    width: 1280px;
+    width: 1349px;
     box-sizing: border-box;
 }
-
 .home-screen .container {
     border-radius: 5px;
     border: 1px solid #949494;
@@ -432,24 +439,34 @@
 }
 
 .home-screen .log-in {
-    margin: 6px 0 7px 0;
+    margin: 8px 0 7px 0;
     display: inline-block;
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: 800;
+    font-style:italic;
+    font-size: 15px;
     color: #000000;
 }
 
 .home-screen .welcome-to-content-craft-ai {
     margin-bottom: 5px;
+    margin-top: -10px;
     overflow-wrap: break-word;
     font-family: 'Helvetica', 'Roboto Condensed';
     font-weight: 700;
-    font-size: 35px;
-    color: #000000;
+    font-size: 25px;
+    color: #FC7138;
 }
 
+
+.home-screen .welcome-to- {
+    font-family: 'Helvetica', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.333;
+    color: #000000;
+}
 .welcome-to-content-craft-ai {
     font-family: 'Helvetica', 'Roboto Condensed';
     font-weight: 700;
@@ -457,7 +474,6 @@
     line-height: 1.333;
     color: #FC7138;
 }
-
 .welcome-to-content-craft-ai-sub7 {
     font-family: 'Helvetica', 'Roboto Condensed';
     font-weight: 700;
@@ -566,7 +582,7 @@
 
 .home-screen .container-13 {
     position: relative;
-    margin: 0 0 45px 285px;
+    margin: -20px 0 45px 285px;
     display: flex;
     flex-direction: row;
     align-self: center;
