@@ -14,8 +14,8 @@
     width: 1054px;
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
-    font-weight: 700;
-    font-size: 12px;
+    font-weight: 600;
+    font-size: 14px;
     color: #FC7138;
 }
 
@@ -100,11 +100,13 @@
 }
 
 .home-screen .target-audience {
-    margin: 7px 19.3px 8px 0;
+    margin: 7px 6px 7px 0;
     display: inline-block;
+    width: 112px;
+    height: 10px;
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
-    font-weight: 400;
+    font-weight: 600;
     font-size: 14px;
     color: #000000;
 }

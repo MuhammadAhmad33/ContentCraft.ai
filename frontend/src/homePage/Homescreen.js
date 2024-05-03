@@ -93,11 +93,11 @@ export default function HomeScreen() {
                             </div>
                         </div>
                     </div>
-                    <div className="container-4">
+                    {/* <div className="container-4">
                         <span className="hashtags">
                             #Hashtags
                         </span>
-                    </div>
+                    </div> */}
                     <div className="container-6">
                         <div className="select-platform">
                             Select platform:
