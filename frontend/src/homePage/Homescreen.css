@@ -59,7 +59,7 @@
 }
 
 .home-screen .instagram {
-    margin: 2px 0;
+    margin: px 0;
     display: inline-block;
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
@@ -69,7 +69,7 @@
 }
 
 .home-screen .twitter {
-    margin: 2px 0;
+    margin: 0px 0;
     display: inline-block;
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
@@ -310,7 +310,7 @@
 
 .home-screen .enter {
     background: url('../assets/images/Enter.png') 50% / contain no-repeat;
-    margin-top: 133px;
+    margin-bottom: 333px;
     width: 25px;
     height: 25px;
 }
@@ -425,6 +425,7 @@ font-weight: 600;
     background: #FFFFFF;
     position: relative;
     display: flex;
+    font-family: 'Arial', 'Roboto Condensed';
     flex-direction: row;
     justify-content: space-between;
     padding: 13px 17px 12px 25.7px;
@@ -518,10 +519,10 @@ font-weight: 600;
 }
 
 .home-screen .container-6 {
-    margin: 0 5px 13px 5px;
+    margin: 0 5px 13px -32px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-self: flex-start;
     width: 636.7px;
     box-sizing: border-box;
@@ -549,7 +550,7 @@ font-weight: 600;
     margin: 0 35.8px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-self: flex-start;
     width: 1114.2px;
     box-sizing: border-box;

@@ -40,7 +40,7 @@ export default function HomeScreen() {
                 </div>
                 <div className="main-heading">
                     <p className="welcome-to-content-craft-ai"><span className='welcome-to- '>Welcome to </span>
-                ContentCraft.ai
+                        ContentCraft.ai
                         <span className="welcome-to-content-craft-ai-sub-7"></span>
                     </p>
                     <span className="tailored-for-purpose-perfect-for-engagement">
@@ -60,39 +60,64 @@ export default function HomeScreen() {
                     History
                 </div>
                 <div className="all-options">
-                    <div className="container-2">
+                    {/* <div className="container-2">
                         <div className="target-audience">
                             Target audience:
+                            <select>
+                                <option value="">Select</option>
+                                <option value="linkedin">LinkedIn</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="twitter">Twitter</option>
+                            </select>
                         </div>
                         <div className="frame-2">
-                            <div className="age-group">
-                                Age group
+                            <div className="audience-types">
+                                Audience types:
+                                <select>
+                                    <option value="">Select</option>
+                                    <option value="professionals">Professionals</option>
+                                    <option value="recruiters">Recruiters</option>
+                                    <option value="newbies">Newbies</option>
+                                    <option value="job-seekers">Job Seekers</option>
+                                </select>
                             </div>
                             <div className="expand-arrow-3">
                             </div>
                         </div>
                         <div className="frame-3">
-                            <div className="gender">
-                                Gender
+                            <div className="age-group">
+                                Age group:
+                                <select>
+                                    <option value="">Select</option>
+                                    <option value="18-24">18-24</option>
+                                    <option value="25-34">25-34</option>
+                                    <option value="35-44">35-44</option>
+                                    <option value="45-54">45-54</option>
+                                    <option value="55-64">55-64</option>
+                                    <option value="65+">65+</option>
+                                </select>
                             </div>
                             <div className="expand-arrow">
                             </div>
                         </div>
                         <div className="frame-4">
-                            <div className="country">
-                                Country
+                            <div className="interests">
+                                Interests:
+                                <select>
+                                    <option value="">Select</option>
+                                    <option value="technology">Technology</option>
+                                    <option value="business">Business</option>
+                                    <option value="fashion">Fashion</option>
+                                    <option value="travel">Travel</option>
+                                    <option value="fitness">Fitness</option>
+                                    <option value="food">Food</option>
+                                </select>
                             </div>
                             <div className="expand-arrow-1">
                             </div>
                         </div>
-                        <div className="frame-5">
-                            <div className="field">
-                                Field
-                            </div>
-                            <div className="expand-arrow-2">
-                            </div>
-                        </div>
-                    </div>
+                    </div> */}
+
                     {/* <div className="container-4">
                         <span className="hashtags">
                             #Hashtags
@@ -103,41 +128,31 @@ export default function HomeScreen() {
                             Select platform:
                         </div>
                         <div className="container-8">
-                            <div className="unchecked-checkbox">
-                            </div>
-                            <div className="instagram">
-                                Instagram
-                            </div>
+                            <input type="radio" id="instagram" name="platform" value="instagram" />
+                            <label htmlFor="instagram" className="instagram">Instagram</label>
                         </div>
                         <div className="container-14">
-                            <div className="unchecked-checkbox-1">
-                            </div>
-                            <div className="twitter">
-                                Twitter
-                            </div>
+                            <input type="radio" id="twitter" name="platform" value="twitter" />
+                            <label htmlFor="twitter" className="twitter">Twitter</label>
                         </div>
                         <div className="container-3">
-                            <div className="unchecked-checkbox-2">
-                            </div>
-                            <div className="linked-in">
-                                LinkedIn
-                            </div>
-                        </div>
-                        <div className="container-15">
-                            <div className="unchecked-checkbox-3">
-                            </div>
-                            <div className="facebook">
-                                Facebook
-                            </div>
+                            <input type="radio" id="linkedin" name="platform" value="linkedin" />
+                            <label htmlFor="linkedin" className="linked-in">LinkedIn</label>
                         </div>
                     </div>
-                    <div className="container-1">
-                        <div className="write-your-purpose">
-                            Write your purpose....
-                        </div>
-                        <div className="enter">
-                        </div>
+
+                    <div>
+                        <textarea
+                            className="container-1"
+                            rows="5"
+                            cols="30"
+                            placeholder="Write your purpose & target audience...."
+                            maxLength="750"
+                            style={{ width: '100%', maxWidth: '750px', height: '185px' }}
+                        />
+                        <span className="enter"></span>
                     </div>
+
                 </div>
             </div>
             <div className="line-3">
