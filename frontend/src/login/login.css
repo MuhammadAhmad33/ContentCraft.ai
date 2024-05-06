@@ -1,5 +1,12 @@
+.login {
+  display: flex;
+  justify-content: center; /* Horizontally center children */
+  align-items: center; /* Vertically center children */
+  height: 100vh; /* Adjust to your layout */
+}
+
 .login .sign-in-to-your-account {
-    margin: 0 44.7px 46px 0;
+    margin: 0 0px 46px 0;
     align-self: center;
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
@@ -55,36 +62,41 @@
     color: #000000;
   }
   .login .header {
-    border: 1px solid #E2DADA;
+    /* border: 1px solid #E2DADA; */
     background: #FFFFFF;
     position: relative;
-    margin-bottom: 87px;
+    margin-bottom: 0px;
+    left: 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 12px 32px 11px 31px;
-    width: 1280px;
+    width: 1270px;
     box-sizing: border-box;
   }
   .login .background {
     position: absolute;
     left: 50%;
-    top: 52px;
+    top: 90px;
     translate: -50% 0;
     width: 1280px;
     height: 782px;
   }
   .login .sign-in-to-account {
     border-radius: 15px;
-    border: 1px solid #345E55;
+    border: 1px solid #b7c4c0;
     background: #FFFFFF;
     position: relative;
     display: flex;
     flex-direction: column;
     padding: 41px 24.9px 18px 26px;
+    width: -moz-fit-content;
     width: fit-content;
     box-sizing: border-box;
-  }
+    margin-left :8% ; /* This will horizontally center the div */
+    top: 12%;
+}
+
   .login .sign-in {
     border-radius: 10px;
     background: #68E1C8;
@@ -93,7 +105,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 14px 11.8px 14px 0;
+    padding: 8px 4px 8px 4px;
     width: 451px;
     box-sizing: border-box;
   }
@@ -101,8 +113,9 @@
     border-radius: 5px;
     background: #68E1C8;
     position: relative;
-    padding: 6px 14px 7px 14px;
-    width: 82px;
+    color: rgb(255, 255, 255);
+    padding: 2px 15px 4px 15px;
+    width: 90px;
     box-sizing: border-box;
   }
   .login .back-1 {
@@ -137,7 +150,7 @@
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     color: #FC7138;
   }
   .login .sign-up-1 {
@@ -156,18 +169,20 @@
     color: #000000;
   }
   .login .email-placeholder {
+    border: 1px solid #b7c4c0;
     border-radius: 10px;
     background: #F4F4F4;
     margin: 0 0.1px 15px 0px;
     width: 451px;
-    height: 54px;
+    height: 37px;
   }
   .login .password-placeholder {
+    border: 1px solid #b7c4c0;
     border-radius: 10px;
     background: #F4F4F4;
     margin: 0 0.1px 5px 0px;
     width: 451px;
-    height: 54px;
+    height: 37px;
   }
   .login .email {
     margin: 0 0px 8px 0px;
@@ -203,7 +218,7 @@
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
     font-weight: 700;
-    font-size: 22px;
+    font-size: 20px;
     color: #FFFFFF;
   }
   .login .or {
@@ -227,7 +242,7 @@
     height: 1px;
   }
   .login .sign-in-with-linked-in {
-    margin: 5px 0 4px 0;
+    margin: 5px 15px 4px 0;
     display: inline-block;
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
@@ -236,7 +251,7 @@
     color: #5A5858;
   }
   .login .sign-in-with-google {
-    margin: 4px 0 5px 0;
+    margin: 4px 15px 5px 0;
     display: inline-block;
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
@@ -249,7 +264,7 @@
     border: 1px solid #DFDFDF;
     background: #FFFFFF;
     position: relative;
-    margin: 0 0.1px 8px 0px;
+    margin: 0 0.1px 15px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -257,3 +272,12 @@
     width: 451px;
     box-sizing: border-box;
   }
+
+  .container-11 {
+    border-radius: 5px;
+    background: #68E1C8;
+    position: relative;
+    padding: 6px 14px 7px 14px;
+    width: 82px;
+    box-sizing: border-box;
+}
