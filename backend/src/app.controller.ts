@@ -11,6 +11,12 @@ export class Gpt2Controller {
 
   ) { }
 
+  @Post('login')
+  findone(@Body() req: userdto): any {
+      console.log('req', req)
+      return this.AuthService.validateuser(req.username, req.password);
+  }
+
   @Post('createUser')
   createUser(@Body() data: userdto): any {
     return this.AuthService.newuser(data);
