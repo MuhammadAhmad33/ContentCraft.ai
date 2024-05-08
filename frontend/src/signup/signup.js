@@ -1,76 +1,108 @@
-import './signup.css'
+import React, { useState } from 'react';
+import './signup.css'; // Assuming you have the CSS file with the necessary styles
+import { useNavigate } from 'react-router-dom';
 
-export default function SignUp() {
+
+export default function Signup() {
+    const navigate = useNavigate();
+    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleUsernameChange = (event) => {
+        setUsername(event.target.value);
+    };
+
+    const handleEmailChange = (event) => {
+        setEmail(event.target.value);
+    };
+
+    const handlePasswordChange = (event) => {
+        setPassword(event.target.value);
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        // Handle the form submission, e.g., send signup data to the server
+        try {
+          const response = await fetch('http://localhost:3001/gpt2/createUser', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ username,email,password}),
+            
+          });
+          console.log(response)
+          if (response.ok) {
+            console.log('logged');
+    
+            const data = await response.json();
+            console.log(data)
+            // Store token and user information in localStorage
+            if (data.access_token) {
+              // Store token and user information in localStorage
+              localStorage.setItem('token', data.access_token);
+              // localStorage.setItem('userId', data.id);
+            // localStorage.setItem('username', data.username);
+    
+            // Navigate to the home page or another route
+            navigate('/homescreen');} // Adjust the route as needed
+            window.location.reload();
+    
+          } else {
+            // Handle authentication error
+            console.error('Authentication failed');
+          }
+        } catch (error) {
+          console.error('Error during authentication:', error);
+        }
+    }
+
     return (
-        <div className="sign-up-2">
-            <div className="header">
+        <div className="login">
+            <div className="header2">
                 <div className="content-craft-ai">
                     ContentCraft.ai
                 </div>
                 <div className="home">
                     Home
                 </div>
-                <div className="container-1">
-                    <div className="back-1">
-                    </div>
+                <div className="back-1">
                     <div className="back">
-                        Back
                     </div>
+                    <span className="back-2">
+                        Back
+                    </span>
                 </div>
-                <div className="container-3">
-                    <span className="log-in">
-                        Log In
+                <div>
+                    <span className="sign-up2">
+                        Sign In
                     </span>
                 </div>
             </div>
-            <div className="sign-uo-account">
-                <p className="sign-up-to-create-your-account">
-                    <span className="sign-up-to-create-your-account-sub-1"></span><span></span>
+            <div className="sign-in-to-account">
+                <p className="sign-in-to-your-account">
+                    Sign up for an account
                 </p>
                 <div className="email">
                     Email
                 </div>
-                <div className="email-placeholder">
+                <input type="text" className="email-placeholder" value={email} onChange={handleEmailChange} />
+                <div className="username">
+                    Username
                 </div>
+                <input type="text" className="username-placeholder" value={username} onChange={handleUsernameChange} />
                 <div className="password">
                     Password
                 </div>
-                <div className="password-placeholder">
-                </div>
-                <div className="confirm-password">
-                    Confirm Password
-                </div>
-                <div className="confirm-password-placeholder">
-                </div>
-                <div className="container-4">
-                    <div className="line-1">
-                    </div>
-                    <span className="or">
-                        OR
-                    </span>
-                    <div className="line-2">
-                    </div>
-                </div>
-                <div className="container-5">
-                    <div className="google">
-                    </div>
-                    <div className="sign-in-with-google">
-                        Sign In with Google
-                    </div>
-                </div>
-                <div className="container-2">
-                    <div className="linked-in">
-                    </div>
-                    <div className="sign-in-with-linked-in">
-                        Sign In with LinkedIn
-                    </div>
-                </div>
-                <div className="container">
-                    <span className="sign-up-1">
+                <input type="password" className="password-placeholder" value={password} onChange={handlePasswordChange} />
+                <div className="" onClick={handleSubmit}>
+                    <span className="signin2">
                         Sign Up
                     </span>
                 </div>
             </div>
         </div>
-    )
+    );
 }

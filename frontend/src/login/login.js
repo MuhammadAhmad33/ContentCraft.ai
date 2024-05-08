@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './login.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -12,20 +14,55 @@ export default function Login() {
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
     };
+//
+const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    const handleSubmit = () => {
-        const formData = {
-            email: email,
-            password: password
-        };
+    try {
+      const response = await fetch('http://localhost:3001/gpt2/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+        
+      });
+      console.log(response)
 
-        // Call your backend API here with formData
-        console.log('Form Data:', formData);
-        // Example: fetch('your_backend_api_url', { method: 'POST', body: JSON.stringify(formData) })
-        // .then(response => response.json())
-        // .then(data => console.log(data))
-        // .catch(error => console.error('Error:', error));
-    };
+      if (response.ok) {
+        console.log('logged');
+
+        const data = await response.json();
+        // Store token and user information in localStorage
+        localStorage.setItem('token', data.access_token);
+        // localStorage.setItem('userId', data.userId);
+        // localStorage.setItem('username', data.username);
+
+        // Navigate to the home page or another route
+        navigate('/homescreen');
+        window.location.reload();
+
+      } else {
+        // Handle authentication error
+        console.error('Authentication failed');
+      }
+    } catch (error) {
+      console.error('Error during authentication:', error);
+    }}
+//
+    // const handleSubmit = () => {
+    //     const formData = {
+    //         email: email,
+    //         password: password
+    //     };
+
+    //     // Call your backend API here with formData
+    //     console.log('Form Data:', formData);
+    //     // Example: fetch('your_backend_api_url', { method: 'POST', body: JSON.stringify(formData) })
+    //     // .then(response => response.json())
+    //     // .then(data => console.log(data))
+    //     // .catch(error => console.error('Error:', error));
+    // };
 
     return (
         <div className="login">
@@ -45,7 +82,7 @@ export default function Login() {
                     </span>
                 </div>
                 <div>
-                    <span className="sign-up">
+                    <span className="sign-up1">
                         Sign Up
                     </span>
                 </div>
@@ -55,7 +92,7 @@ export default function Login() {
                     Sign in to your account
                 </p>
                 <div className="email">
-                    Email
+                    Username / Email
                 </div>
                 <input type="text" className="email-placeholder" value={email} onChange={handleEmailChange} />
                 <div className="password">
