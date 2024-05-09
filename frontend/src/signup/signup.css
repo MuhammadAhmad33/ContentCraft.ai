@@ -1,290 +1,390 @@
 .login {
+  display: flex;
+  justify-content: center; /* Horizontally center children */
+  align-items: center; /* Vertically center children */
+  height: 100vh; /* Adjust to your layout */
+}
+
+.login .sign-in-to-your-account {
+    margin: 0 0px 46px 0;
+    align-self: center;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 22px;
+    color: #000000;
+  }
+
+  .sign-in-to-your-account-sub1 {
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.333;
+    color: #FC7138;
+  }
+  .login .google {
+    background: url('../assets/images/Google.png') 50% / contain no-repeat;
+    width: 25px;
+    height: 25px;
+  }
+  .login .linked-in {
+    background: url('../assets/images/LinkedIn.png') 50% / contain no-repeat;
+    width: 25px;
+    height: 25px;
+  }
+  .login .back {
+    background: url('../assets/images/Back.png') 50% / contain no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+  }
+  .login .container {
+    border-radius: 10px;
+    border: 1px solid #DFDFDF;
+    background: #FFFFFF;
+    position: relative;
+    margin: 0 0.1px 42px 0px;
     display: flex;
-    justify-content: center; /* Horizontally center children */
-    align-items: center; /* Vertically center children */
-    height: 100vh; /* Adjust to your layout */
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 14px 0 15px 17px;
+    width: 451px;
+    box-sizing: border-box;
   }
-  
-  .login .sign-in-to-your-account {
-      margin: 0 0px 46px 0;
-      align-self: center;
-      overflow-wrap: break-word;
-      font-family: 'Arial', 'Roboto Condensed';
-      font-weight: 700;
-      font-size: 22px;
-      color: #000000;
-    }
-    .sign-in-to-your-account-sub1 {
-      font-family: 'Arial', 'Roboto Condensed';
-      font-weight: 700;
-      font-size: 22px;
-      line-height: 1.333;
-      color: #FC7138;
-    }
-    .login .google {
-      background: url('../assets/images/Google.png') 50% / contain no-repeat;
-      width: 25px;
-      height: 25px;
-    }
-    .login .linked-in {
-      background: url('../assets/images/LinkedIn.png') 50% / contain no-repeat;
-      width: 25px;
-      height: 25px;
-    }
-    .login .back {
-      background: url('../assets/images/Back.png') 50% / contain no-repeat;
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      width: 20px;
-      height: 20px;
-    }
-    .login .container {
+  .login .home {
+    margin: 6px 0 7px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+  }
+  .login .header2 {
+    /* border: 1px solid #E2DADA; */
+    background: #FFFFFF;
+    position: relative;
+    margin-bottom: 0px;
+    left: 3%;
+    bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 32px 11px 31px;
+    width: 1270px;
+    box-sizing: border-box;
+  }
+  .login .background {
+    position: absolute;
+    left: 50%;
+    top: 90px;
+    translate: -50% 0;
+    width: 1280px;
+    height: 782px;
+  }
+  .login .sign-in-to-account {
+    border-radius: 15px;
+    border: 1px solid #b7c4c0;
+    background:  linear-gradient(to bottom, rgba(52, 94, 85, 1), rgba(104, 225, 200, 1), rgba(136, 201, 169, 1), rgba(159, 184, 146, 1), rgba(252, 113, 56, 0.7));
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 41px 24.9px 18px 26px;
+    width: -moz-fit-content;
+    width: fit-content;
+    box-sizing: border-box;
+    margin-left :8% ; /* This will horizontally center the div */
+    top: 12%;
+}
+
+  .login .sign-up2 {
+    border-radius: 15px;
+    background: #68E1C8;
+    position: relative;
+    margin: 0 0.1px 0 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4px 2px 6px 2px;
+    width: 90px;
+    box-sizing: border-box;
+    color:#ffffff;
+  }
+  .login .sign-up {
+    border-radius: 5px;
+    background: #68E1C8;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding: 2px 15px 4px 15px;
+    width: 90px;
+    box-sizing: border-box;
+  }
+  .login .back-1 {
+    position: relative;
+    margin: 4px 0 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2px 0 2px 20px;
+    box-sizing: border-box;
+  }
+  .login .container-1 {
+    margin-bottom: 27px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  .login {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 101px;
+    width: 1280px;
+    box-sizing: border-box;
+  }
+  .login .content-craft-ai {
+    margin: 7px 7px 8px 0;
+    display: inline-block;
+    width: 967px;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 14px;
+    color: #FC7138;
+  }
+  .login .sign-up-1 {
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+  .login .back-2 {
+    position: relative;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+  }
+  .login .email-placeholder {
+    border: 1px solid #b7c4c0;
+    border-radius: 10px;
+    background: #F4F4F4;
+    margin: 0 0.1px 15px 0px;
+    width: 451px;
+    height: 37px;
+  }
+  .login .password-placeholder {
+    border: 1px solid #b7c4c0;
+    border-radius: 10px;
+    background: #F4F4F4;
+    margin: 0 0.1px 5px 0px;
+    width: 451px;
+    height: 37px;
+  }
+  .login .username-placeholder {
+    border: 1px solid #b7c4c0;
+    border-radius: 10px;
+    background: #F4F4F4;
+    margin: 0 0.1px 5px 0px;
+    width: 451px;
+    height: 37px;
+  }
+  .login .email {
+    margin: 0 0px 8px 0px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 14px;
+    color: #5A5858;
+  }
+  .login .username {
+    margin: 0 0px 8px 0px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 14px;
+    color: #5A5858;
+  }
+  .login .password {
+    margin: 0 0px 8px 0px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 14px;
+    color: #5A5858;
+  }
+  .login .forgot-password {
+    margin: 0 0px 16px 0px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 12px;
+    color: #FC7138;
+  }
+  .login .signin2 {
       border-radius: 10px;
-      border: 1px solid #DFDFDF;
-      background: #FFFFFF;
-      position: relative;
-      margin: 0 0.1px 42px 0px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 14px 0 15px 17px;
-      width: 451px;
-      box-sizing: border-box;
-    }
-    .login .home {
-      margin: 6px 0 7px 0;
-      display: inline-block;
-      overflow-wrap: break-word;
-      font-family: 'Arial', 'Roboto Condensed';
-      font-weight: 700;
-      font-size: 14px;
-      color: #000000;
-    }
-    .login .header2 {
-      /* border: 1px solid #E2DADA; */
-      background: #FFFFFF;
-      position: relative;
-      margin-bottom: 0px;
-      left: 3%;
-      bottom: 10%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 12px 32px 11px 31px;
-      width: 1270px;
-      box-sizing: border-box;
-    }
-    .login .background {
-      position: absolute;
-      left: 50%;
-      top: 90px;
-      translate: -50% 0;
-      width: 1280px;
-      height: 782px;
-    }
-    .login .sign-in-to-account {
-      border-radius: 15px;
-      border: 1px solid #b7c4c0;
-      background: #FFFFFF;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      padding: 41px 24.9px 18px 26px;
-      width: -moz-fit-content;
-      width: fit-content;
-      box-sizing: border-box;
-      margin-left :8% ; /* This will horizontally center the div */
-      top: 12%;
-  }
-  
-    .login .sign-up2 {
-      border-radius: 15px;
       background: #68E1C8;
       position: relative;
       margin: 0 0.1px 0 0px;
       display: flex;
       flex-direction: row;
       justify-content: center;
-      padding: 4px 2px 6px 2px;
-      width: 90px;
-      box-sizing: border-box;
-      color:#ffffff;
-    }
-    .login .sign-up {
-      border-radius: 5px;
-      background: #68E1C8;
-      position: relative;
-      color: rgb(255, 255, 255);
-      padding: 2px 15px 4px 15px;
-      width: 90px;
-      box-sizing: border-box;
-    }
-    .login .back-1 {
-      position: relative;
-      margin: 4px 0 5px 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 2px 0 2px 20px;
-      box-sizing: border-box;
-    }
-    .login .container-1 {
-      margin-bottom: 27px;
-      display: flex;
-      flex-direction: row;
-      width: fit-content;
-      box-sizing: border-box;
-    }
-    .login {
-      background: #FFFFFF;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 101px;
-      width: 1280px;
-      box-sizing: border-box;
-    }
-    .login .content-craft-ai {
-      margin: 7px 7px 8px 0;
-      display: inline-block;
-      width: 967px;
-      overflow-wrap: break-word;
-      font-family: 'Arial', 'Roboto Condensed';
-      font-weight: 700;
-      font-size: 14px;
-      color: #FC7138;
-    }
-    .login .sign-up-1 {
-      overflow-wrap: break-word;
-      font-family: 'Arial', 'Roboto Condensed';
-      font-weight: 700;
-      font-size: 14px;
-      color: #FFFFFF;
-    }
-    .login .back-2 {
-      position: relative;
-      overflow-wrap: break-word;
-      font-family: 'Arial', 'Roboto Condensed';
-      font-weight: 700;
-      font-size: 14px;
-      color: #000000;
-    }
-    .login .email-placeholder {
-      border: 1px solid #b7c4c0;
-      border-radius: 10px;
-      background: #F4F4F4;
-      margin: 0 0.1px 15px 0px;
+      padding: 8px 4px 8px 4px;
       width: 451px;
-      height: 37px;
-    }
-    .login .password-placeholder {
-      border: 1px solid #b7c4c0;
-      border-radius: 10px;
-      background: #F4F4F4;
-      margin: 0 0.1px 5px 0px;
-      width: 451px;
-      height: 37px;
-    }
-    .login .email {
-      margin: 0 0px 8px 0px;
-      display: inline-block;
-      align-self: flex-start;
-      overflow-wrap: break-word;
-      font-family: 'Arial', 'Roboto Condensed';
-      font-weight: 700;
-      font-size: 14px;
-      color: #5A5858;
-    }
-    .login .password {
-      margin: 0 0px 8px 0px;
-      display: inline-block;
-      align-self: flex-start;
-      overflow-wrap: break-word;
-      font-family: 'Arial', 'Roboto Condensed';
-      font-weight: 700;
-      font-size: 14px;
-      color: #5A5858;
-    }
-    .login .forgot-password {
-      margin: 0 0px 16px 0px;
-      display: inline-block;
-      align-self: flex-start;
-      overflow-wrap: break-word;
-      font-family: 'Arial', 'Roboto Condensed';
-      font-weight: 700;
-      font-size: 12px;
-      color: #FC7138;
-    }
-    .login .signin2 {
-        border-radius: 10px;
-        background: #68E1C8;
-        position: relative;
-        margin: 0 0.1px 0 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 8px 4px 8px 4px;
-        width: 451px;
-        box-sizing: border-box;
-    }
-    .login .or {
-      margin-right: 11.8px;
-      overflow-wrap: break-word;
-      font-family: 'Arial', 'Roboto Condensed';
-      font-weight: 700;
-      font-size: 14px;
-      color: #DFDFDF;
-    }
-    .login .line-1 {
-      background: #DFDFDF;
-      margin: 7.5px 7px 7.5px 0;
-      width: 208.1px;
-      height: 1px;
-    }
-    .login .line-2 {
-      background: #DFDFDF;
-      margin: 8px 0 7px 0;
-      width: 208.1px;
-      height: 1px;
-    }
-    .login .sign-in-with-linked-in {
-      margin: 5px 15px 4px 0;
-      display: inline-block;
-      overflow-wrap: break-word;
-      font-family: 'Arial', 'Roboto Condensed';
-      font-weight: 700;
-      font-size: 14px;
-      color: #5A5858;
-    }
-    .login .sign-in-with-google {
-      margin: 4px 15px 5px 0;
-      display: inline-block;
-      overflow-wrap: break-word;
-      font-family: 'Arial', 'Roboto Condensed';
-      font-weight: 700;
-      font-size: 14px;
-      color: #5A5858;
-    }
-    .login .container-2 {
-      border-radius: 10px;
-      border: 1px solid #DFDFDF;
-      background: #FFFFFF;
-      position: relative;
-      margin: 0 0.1px 15px 0px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 15px 0 14px 17px;
-      width: 451px;
-      box-sizing: border-box;
-    }
-  
-    .container-11 {
-      border-radius: 5px;
-      background: #68E1C8;
-      position: relative;
-      padding: 6px 14px 7px 14px;
-      width: 82px;
       box-sizing: border-box;
   }
+  .login .or {
+    margin-right: 11.8px;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 14px;
+    color: #DFDFDF;
+  }
+  .login .line-1 {
+    background: #DFDFDF;
+    margin: 7.5px 7px 7.5px 0;
+    width: 208.1px;
+    height: 1px;
+  }
+  .login .line-2 {
+    background: #DFDFDF;
+    margin: 8px 0 7px 0;
+    width: 208.1px;
+    height: 1px;
+  }
+  .login .sign-in-with-linked-in {
+    margin: 5px 15px 4px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 14px;
+    color: #5A5858;
+  }
+  .login .sign-in-with-google {
+    margin: 4px 15px 5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 14px;
+    color: #5A5858;
+  }
+  .login .container-2 {
+    border-radius: 10px;
+    border: 1px solid #DFDFDF;
+    background: #FFFFFF;
+    position: relative;
+    margin: 0 0.1px 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0 14px 17px;
+    width: 451px;
+    box-sizing: border-box;
+  }
+
+  .container-11 {
+    border-radius: 5px;
+    background: #68E1C8;
+    position: relative;
+    padding: 6px 14px 7px 14px;
+    width: 82px;
+    box-sizing: border-box;
+}
+
+.sign-up-heading{
+    color: rgba(252, 113, 56, 1);
+    
+}
+
+.container-1{
+  margin-top: 27px;
+  margin-bottom: 27px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.container-2 {
+  border-radius: 10px;
+  border: 1px solid #DFDFDF;
+  background: #FFFFFF;
+  position: relative;
+  margin: 0 0.1px 15px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 0 14px 17px;
+  width: 451px;
+  box-sizing: border-box;
+}
+.or {
+  margin-right: 11.8px;
+  overflow-wrap: break-word;
+  font-family: 'Arial', 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 14px;
+  color: #DFDFDF;
+}
+
+.line-1 {
+  background: #DFDFDF;
+  margin: 7.5px 7px 7.5px 0;
+  width: 208.1px;
+  height: 1px;
+}
+
+.line-2 {
+  background: #DFDFDF;
+  margin: 8px 0 7px 0;
+  width: 208.1px;
+  height: 1px;
+}
+
+.google {
+  background: url('../assets/images/Google.png');
+  width: 25px;
+  height: 25px;
+}
+.linked-in {
+  background: url('../assets/images/LinkedIn.png') 50% / contain no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.sign-in-with-google {
+  margin: 4px 15px 5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Arial', 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 14px;
+  color: #5A5858;
+}
+
+.sign-in-with-linked-in {
+  margin: 5px 15px 4px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Arial', 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 14px;
+  color: #5A5858;
+}
