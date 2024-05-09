@@ -61,48 +61,74 @@ export default function Signup() {
 
     return (
         <div className="login">
-            <div className="header2">
-                <div className="content-craft-ai">
-                    ContentCraft.ai
-                </div>
-                <div className="home">
-                    Home
-                </div>
-                <div className="back-1">
-                    <div className="back">
-                    </div>
-                    <span className="back-2">
-                        Back
-                    </span>
-                </div>
-                <div>
-                    <span className="sign-up2">
-                        Sign In
-                    </span>
-                </div>
+        <div className="header2">
+            <div className="content-craft-ai">
+                ContentCraft.ai
             </div>
-            <div className="sign-in-to-account">
-                <p className="sign-in-to-your-account">
-                    Sign up for an account
-                </p>
-                <div className="email">
-                    Email
+            <div className="home">
+                Home
+            </div>
+            <div className="back-1">
+                <div className="back">
                 </div>
-                <input type="text" className="email-placeholder" value={email} onChange={handleEmailChange} />
-                <div className="username">
-                    Username
-                </div>
-                <input type="text" className="username-placeholder" value={username} onChange={handleUsernameChange} />
-                <div className="password">
-                    Password
-                </div>
-                <input type="password" className="password-placeholder" value={password} onChange={handlePasswordChange} />
-                <div className="" onClick={handleSubmit}>
-                    <span className="signin2">
-                        Sign Up
-                    </span>
-                </div>
+                <span className="back-2">
+                    Back
+                </span>
+            </div>
+            <div>
+                <span className="sign-up2">
+                    Sign In
+                </span>
             </div>
         </div>
+        <div className="sign-in-to-account">
+            <p className="sign-in-to-your-account">
+                <span className="sign-up-heading">Sign up</span> to create your account
+            </p>
+            <div className="email">
+                Email
+            </div>
+            <input type="text" className="email-placeholder" value={email} onChange={handleEmailChange} />
+            <div className="username">
+                Username
+            </div>
+            <input type="text" className="username-placeholder" value={username} onChange={handleUsernameChange} />
+            <div className="password">
+                Password
+            </div>
+            <input type="password" className="password-placeholder" value={password} onChange={handlePasswordChange} />
+
+            <div className="container-1">
+                <div className="line-1">
+                </div>
+                <span className="or">
+                    OR
+                </span>
+                <div className="line-2">
+                </div>
+            </div>
+
+            <div className="container-2">
+                <img className="google" src="./Google.png" />
+                
+                <div className="sign-in-with-google">
+                    Sign In with Google
+                </div>
+            </div>
+
+            <div className="container-2">
+                <img className="linked-in" src="./LinkedIn.png" />
+                
+                <div className="sign-in-with-linked-in">
+                    Sign In with LinkedIn
+                </div>
+            </div>
+            <div className="" onClick={handleSubmit}>
+                <span className="signin2">
+                    Sign Up
+                </span>
+            </div>
+        </div>
+    </div>
     );
 }
