@@ -22,25 +22,26 @@ export class Gpt2Controller {
     return this.AuthService.newuser(data);
   }
 
-  private fastapiHost = '127.0.0.1';
-  private fastapiPort = 8000;
+  // private Host = '127.0.0.1';
+  // private Port = 5000;
 
   @Post('generateText')
-  async generateText(@Body('prompt') prompt: string): Promise<string[]> {
+  async generateText(@Body('prompt') prompt: any): Promise<string[]> {
     try {
       console.log('received prompt:', prompt);
-      // Construct the URL using the host and port
-      const url = `http://${this.fastapiHost}:${this.fastapiPort}/generate_text/`;
+      // Construct the URL using the host and port of the Flask API
+      const flaskApiUrl = 'http://127.0.0.1:5000/generate_content';
+  
+      // Send the POST request to the Flask API
+      const response = await axios.post(flaskApiUrl, { prompt });
 
-      // Send the POST request to the FastAPI server
-      const response = await axios.post(url, { prompt });
 
       // Return the response data
-      console.log(response.data)
-      return response.data;
+      console.log(response.data);
+      return response.data.generated_content;
     } catch (error) {
       // Handle errors appropriately
-      throw new Error('Failed to send request to FastAPI: ' + error.message);
+      throw new Error('Failed to send request to Flask API: ' + error.message);
     }
   }
 }
