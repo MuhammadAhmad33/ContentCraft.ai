@@ -1,55 +1,57 @@
 import React, { useState } from 'react';
 import './login.css';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
     const navigate = useNavigate();
-    const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
     const handleEmailChange = (event) => {
-        setEmail(event.target.value);
+        setUsername(event.target.value);
     };
 
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
     };
-//
-const handleSubmit = async (e) => {
-    e.preventDefault();
+    //
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
-    try {
-      const response = await fetch('http://localhost:3001/gpt2/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-        
-      });
-      console.log(response)
+        try {
+            const response = await fetch('http://localhost:3001/gpt2/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, password }),
 
-      if (response.ok) {
-        console.log('logged');
+            });
+            console.log(response)
 
-        const data = await response.json();
-        // Store token and user information in localStorage
-        localStorage.setItem('token', data.access_token);
-        // localStorage.setItem('userId', data.userId);
-        // localStorage.setItem('username', data.username);
+            if (response.ok) {
+                console.log('logged');
 
-        // Navigate to the home page or another route
-        navigate('/homescreen');
-        window.location.reload();
+                const data = await response.json();
+                // Store token and user information in localStorage
+                localStorage.clear(); // Clear all items from localStorage
+                localStorage.setItem('token', data.access_token); // Set the token
 
-      } else {
-        // Handle authentication error
-        console.error('Authentication failed');
-      }
-    } catch (error) {
-      console.error('Error during authentication:', error);
-    }}
-//
+                alert('Login successful');
+                // Navigate to the home page or another route
+                navigate('/homescreen');
+                window.location.reload();
+
+            } else {
+                // Handle authentication error
+                console.error('Authentication failed');
+            }
+        } catch (error) {
+            console.error('Error during authentication:', error);
+        }
+    }
+    //
     // const handleSubmit = () => {
     //     const formData = {
     //         email: email,
@@ -72,19 +74,24 @@ const handleSubmit = async (e) => {
                     ContentCraft.ai
                 </div>
                 <div className="home">
-                    Home
+                    <Link to="/homescreen">
+                        Home
+                    </Link>
                 </div>
                 <div className="back-1">
-                    <div className="back">
-                    </div>
-                    <span className="back-2">
+                    {/* <div className="back">
+                    </div> */}
+                    {/* <span className="back-2">
                         Back
-                    </span>
+                    </span> */}
                 </div>
                 <div>
                     <span className="sign-up1">
-                        Sign Up
+                        <a href="http://localhost:3000/signup">
+                            Sign Up
+                        </a>
                     </span>
+
                 </div>
             </div>
             <div className="sign-in-to-account">
@@ -94,7 +101,7 @@ const handleSubmit = async (e) => {
                 <div className="email">
                     Username / Email
                 </div>
-                <input type="text" className="email-placeholder" value={email} onChange={handleEmailChange} />
+                <input type="text" className="email-placeholder" value={username} onChange={handleEmailChange} />
                 <div className="password">
                     Password
                 </div>

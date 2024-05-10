@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 
 export default function HomeScreen() {
     const [platform, setPlatform] = useState('');
-    const [purpose, setPurpose] = useState('');
+    const [prompt, setPrompt] = useState('');
+    const [generatedText, setGeneratedText] = useState([]);
 
     const handlePlatformChange = (event) => {
         console.log(event.target.value);
@@ -12,37 +13,40 @@ export default function HomeScreen() {
 
     const handlePurposeChange = (event) => {
         console.log(event.target.value);
-        setPurpose(event.target.value);
+        setPrompt(event.target.value);
     };
 
-    const handleSubmit = () => {
-        const requestData = {
-            prompt: purpose, // Assuming 'purpose' contains the entered prompt
-            platform: platform, // Assuming 'selectedPlatform' contains the selected platform value
-        };
-
-        fetch('http://http://localhost:3001/gpt2/generateText', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(requestData),
-        })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to generate text');
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log('Generated Texts:', data);
-                // Handle the generated texts as needed
-            })
-            .catch(error => {
-                console.error('Error generating text:', error);
-                // Handle error appropriately
+    const handleSubmit = async (e) => {
+        console.log('start', prompt)
+        try {
+            const response = await fetch('http://localhost:3001/gpt2/generateText', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ prompt }),
             });
+
+            if (!response.ok) {
+                throw new Error('Failed to generate text');
+            }
+
+            const data = await response.json();
+            console.log('Raw Response Text:', data);
+
+            // Replace "\n" with new line characters
+            const formattedText = data.map(text => text.replaceAll('\\n', '\n'));
+
+            console.log('Formatted Text:', formattedText);
+
+            // Set the formatted text in state
+            setGeneratedText(formattedText);
+        } catch (error) {
+            console.error('Error generating text:', error);
+            // Handle error appropriately
+        }
     };
+
 
     return (
         <div className="home-screen">
@@ -53,13 +57,17 @@ export default function HomeScreen() {
                     ContentCraft.ai
                 </div>
                 <div className="log-in">
-                    Log In
+                    <a href="http://localhost:3000/login">
+                        Log In
+                    </a>
                 </div>
+
                 <div className="container-11">
-                    <span className="sign-up">
+                    <a href="http://localhost:3000/signup" className="sign-up">
                         Sign Up
-                    </span>
+                    </a>
                 </div>
+
             </div>
             <div className="container-7">
                 <div className="container-10">
@@ -100,7 +108,7 @@ export default function HomeScreen() {
             </div>
             <div className="container-9">
                 <div className="history">
-                    History
+
                 </div>
                 <div className="all-options">
                     <div className="container-6">
@@ -117,7 +125,7 @@ export default function HomeScreen() {
                         </div>
                         <div className="container-3">
                             <input type="radio" id="linkedin" name="platform" value="linkedin" checked={platform === 'linkedin'} onChange={handlePlatformChange} />
-                            <label htmlFor="linkedin" className="linked-in">LinkedIn</label>
+                            <label htmlFor="linkedin" className="linkedin">LinkedIn</label>
                         </div>
                     </div>
 
@@ -128,17 +136,32 @@ export default function HomeScreen() {
                             cols="30"
                             placeholder="Write your purpose & target audience...."
                             maxLength="750"
-                            style={{ width: '100%', maxWidth: '750px', height: '185px' }}
-                            value={purpose}
+                            style={{
+                                width: '100%', maxWidth: '750px', height: '185px', color: '#949494', fontSize: '14px', fontFamily: 'Arial, Helvetica, sans-serif'
+                            }}
+                            value={prompt}
                             onChange={handlePurposeChange}
                         />
-                        <div className="enter" onChange={handleSubmit}></div>
+                        <button className="enter" onClick={handleSubmit}></button>
                     </div>
-
                 </div>
             </div>
             <div className="line-3">
             </div>
+            <div className="response-container">
+                <span><b>Generated Content:</b><br /><br /></span>
+                <div className="generated-text">
+                    {generatedText.map((text, index) => (
+                        <div key={index}>
+                            <p><b>Generated Content {index + 1}:</b></p>
+                            <p>{text.replace(/\n/g, '\n')}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+
+
         </div>
     )
 }

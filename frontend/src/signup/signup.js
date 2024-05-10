@@ -25,110 +25,110 @@ export default function Signup() {
         e.preventDefault();
         // Handle the form submission, e.g., send signup data to the server
         try {
-          const response = await fetch('http://localhost:3001/gpt2/createUser', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ username,email,password}),
-            
-          });
-          console.log(response)
-          if (response.ok) {
-            console.log('logged');
-    
-            const data = await response.json();
-            console.log(data)
-            // Store token and user information in localStorage
-            if (data.access_token) {
-              // Store token and user information in localStorage
-              localStorage.setItem('token', data.access_token);
-              // localStorage.setItem('userId', data.id);
-            // localStorage.setItem('username', data.username);
-    
-            // Navigate to the home page or another route
-            navigate('/homescreen');} // Adjust the route as needed
-            window.location.reload();
-    
-          } else {
-            // Handle authentication error
-            console.error('Authentication failed');
-          }
+            const response = await fetch('http://localhost:3001/gpt2/createUser', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, email, password }),
+
+            });
+            console.log(response)
+            if (response.ok) {
+                console.log('logged');
+
+                const data = await response.json();
+                console.log(data)
+                // Store token and user information in localStorage
+                if (data.access_token) {
+                    // Store token and user information in localStorage
+                    localStorage.setItem('token', data.access_token);
+                    // localStorage.setItem('userId', data.id);
+                    // localStorage.setItem('username', data.username);
+
+                    // Navigate to the home page or another route
+                    navigate('/homescreen');
+                } // Adjust the route as needed
+                window.location.reload();
+
+            } else {
+                // Handle authentication error
+                console.error('Authentication failed');
+            }
         } catch (error) {
-          console.error('Error during authentication:', error);
+            console.error('Error during authentication:', error);
         }
     }
 
     return (
         <div className="login">
-        <div className="header2">
-            <div className="content-craft-ai">
-                ContentCraft.ai
-            </div>
-            <div className="home">
-                Home
-            </div>
-            <div className="back-1">
-                <div className="back">
+            <div className="header2">
+                <div className="content-craft-ai">
+                    ContentCraft.ai
                 </div>
-                <span className="back-2">
-                    Back
-                </span>
+                <div className="home">
+                    Home
+                </div>
+                <div className="back-1">
+                    <div className="back">
+                    </div>
+                    <span className="back-2">
+                        Back
+                    </span>
+                </div>
+                <div>
+                    <span className="sign-up2">
+                        Sign In
+                    </span>
+                </div>
             </div>
-            <div>
-                <span className="sign-up2">
-                    Sign In
-                </span>
-            </div>
-        </div>
-        <div className="sign-in-to-account">
-            <p className="sign-in-to-your-account">
-                <span className="sign-up-heading">Sign up</span> to create your account
-            </p>
-            <div className="email">
-                Email
-            </div>
-            <input type="text" className="email-placeholder" value={email} onChange={handleEmailChange} />
-            <div className="username">
-                Username
-            </div>
-            <input type="text" className="username-placeholder" value={username} onChange={handleUsernameChange} />
-            <div className="password">
-                Password
-            </div>
-            <input type="password" className="password-placeholder" value={password} onChange={handlePasswordChange} />
+            <div className="sign-in-to-account">
+                <p className="sign-in-to-your-account">
+                    <span className="sign-up-heading">Sign up</span> to create your account
+                </p>
+                <div className="email">
+                    Email
+                </div>
+                <input type="text" className="email-placeholder" value={email} onChange={handleEmailChange} />
+                <div className="username">
+                    Username
+                </div>
+                <input type="text" className="username-placeholder" value={username} onChange={handleUsernameChange} />
+                <div className="password">
+                    Password
+                </div>
+                <input type="password" className="password-placeholder" value={password} onChange={handlePasswordChange} />
 
-            <div className="container-1">
-                <div className="line-1">
+                <div className="container-1">
+                    <div className="line-1">
+                    </div>
+                    <span className="or">
+                        OR
+                    </span>
+                    <div className="line-2">
+                    </div>
                 </div>
-                <span className="or">
-                    OR
-                </span>
-                <div className="line-2">
-                </div>
-            </div>
 
-            <div className="container-2">
-                <img className="google" src="./Google.png" />
-                
-                <div className="sign-in-with-google">
-                    Sign In with Google
+                <div className="container-2">
+                    {/* <img className="google" src="./Google.png" /> */}
+                    <div className="google">
+                    </div>
+                    <div className="sign-in-with-google">
+                        Sign In with Google
+                    </div>
                 </div>
-            </div>
-
-            <div className="container-2">
-                <img className="linked-in" src="./LinkedIn.png" />
-                
+                {/* 
+            <div className="container-2">                
                 <div className="sign-in-with-linked-in">
                     Sign In with LinkedIn
                 </div>
-            </div>
-            <div className="" onClick={handleSubmit}>
-                <span className="signin2">
-                    Sign Up
-                </span>
+            </div> */}
+                <div className="" onClick={handleSubmit}>
+                    <span className="signin2">
+                        Sign Up
+                    </span>
+                </div>
             </div>
         </div>
-    </div>
     );
 }

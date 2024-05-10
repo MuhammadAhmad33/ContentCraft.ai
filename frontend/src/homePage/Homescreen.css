@@ -1,4 +1,3 @@
-
 .home-screen {
     background: #FFFFFF;
     display: flex;
@@ -6,6 +5,7 @@
     padding-bottom: 38px;
     width: 1280px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .home-screen .content-craft-ai {
@@ -22,12 +22,11 @@
 .home-screen .line-3 {
     background: #E2DADA;
     position: absolute;
-    left: 271.5px;
-    bottom: 0px;
-    width: 1px;
-    height: 781px;
+    left: 271.5px; /* Adjust the left position as needed */
+    top: 0;
+    bottom: 0;
+    width: 1px; /* Adjust width as needed */
 }
-
 .home-screen .tailored-for-purpose-perfect-for-engagement {
     margin: 0 33.4px;
     overflow-wrap: break-word;
@@ -59,7 +58,7 @@
 }
 
 .home-screen .instagram {
-    margin: px 0;
+    margin: 2px;
     display: inline-block;
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
@@ -69,7 +68,7 @@
 }
 
 .home-screen .twitter {
-    margin: 0px 0;
+    margin: 2px;
     display: inline-block;
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
@@ -310,9 +309,14 @@
 
 .home-screen .enter {
     background: url('../assets/images/Enter.png') 50% / contain no-repeat;
-    margin-bottom: 333px;
+    /* margin-bottom: 333px; */
     width: 25px;
+    position: relative;
+    bottom: 22%;
+    left: 95%;
     height: 25px;
+    border: none;
+    cursor: pointer;
 }
 
 .home-screen .add-to-chat {
@@ -328,7 +332,7 @@
 }
 
 .home-screen .im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time {
-display: block;
+    display: block;
     text-align: justify;
     margin-right: 50px;
     width: 340px;
@@ -340,9 +344,10 @@ display: block;
     font-size: 14px;
     color: rgba(90, 88, 88, 0.8);
 }
-.home-screen .im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time .orange{
-color: #FC7138;
-font-weight: 600;
+
+.home-screen .im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time .orange {
+    color: #FC7138;
+    font-weight: 600;
 }
 
 .im-your-ai-assistant-here-to-make-creating-engaging-content-for-linked-in-instagram-and-twitter-effortless-just-tell-me-your-purpose-target-audience-and-platform-needs-and-ill-generate-personalized-top-notch-content-for-you-in-no-time {
@@ -406,6 +411,7 @@ font-weight: 600;
     width: 1349px;
     box-sizing: border-box;
 }
+
 .home-screen .container {
     border-radius: 5px;
     border: 1px solid #949494;
@@ -447,7 +453,7 @@ font-weight: 600;
     overflow-wrap: break-word;
     font-family: 'Arial', 'Roboto Condensed';
     font-weight: 800;
-    font-style:italic;
+    font-style: italic;
     font-size: 15px;
     color: #000000;
 }
@@ -470,6 +476,7 @@ font-weight: 600;
     line-height: 1.333;
     color: #000000;
 }
+
 .welcome-to-content-craft-ai {
     font-family: 'Helvetica', 'Roboto Condensed';
     font-weight: 700;
@@ -477,6 +484,7 @@ font-weight: 600;
     line-height: 1.333;
     color: #FC7138;
 }
+
 .welcome-to-content-craft-ai-sub7 {
     font-family: 'Helvetica', 'Roboto Condensed';
     font-weight: 700;
@@ -519,7 +527,7 @@ font-weight: 600;
 }
 
 .home-screen .container-6 {
-    margin: 0 5px 13px -32px;
+    margin: 0 5px -11px -32px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -603,4 +611,52 @@ font-weight: 600;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
+}
+
+.container-3 input[type="radio"] {
+    position: relative;
+    top: -2px;
+    /* Adjust this value to move the radio button up or down */
+    margin-right: 5px;
+}
+
+.container-14 input[type="radio"] {
+    position: relative;
+    top: -2px;
+    /* Adjust this value to move the radio button up or down */
+    margin-right: 5px;
+}
+
+.container-8 input[type="radio"] {
+    position: relative;
+    top: -2px;
+    /* Adjust this value to move the radio button up or down */
+    margin-right: 5px;
+}
+
+.container-3 .linkedin {
+    margin: 2px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    color: #949494;
+}
+.home-screen .response-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 70px 0 10px;
+    width: 50%;
+    height: 100%;
+    background-color: #68E1C8;
+    color: #FFFFFF;
+    position: relative;
+    left: 35%;
+    line-height: 35px;
+    border-radius: 1%;
+    border: 1px solid #68E1C8;
+    padding: 14px 4px 14px 14px;
 }
