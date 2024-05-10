@@ -30,6 +30,7 @@ export default function Login() {
             });
             console.log(response)
 
+
             if (response.ok) {
                 console.log('logged');
 
@@ -52,19 +53,6 @@ export default function Login() {
         }
     }
     //
-    // const handleSubmit = () => {
-    //     const formData = {
-    //         email: email,
-    //         password: password
-    //     };
-
-    //     // Call your backend API here with formData
-    //     console.log('Form Data:', formData);
-    //     // Example: fetch('your_backend_api_url', { method: 'POST', body: JSON.stringify(formData) })
-    //     // .then(response => response.json())
-    //     // .then(data => console.log(data))
-    //     // .catch(error => console.error('Error:', error));
-    // };
 
     return (
         <div className="login">
