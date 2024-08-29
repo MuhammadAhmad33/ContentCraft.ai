@@ -1,5 +1,9 @@
 # ContentCraft.ai
 
+## For Colab Access: 
+  https://colab.research.google.com/drive/17QNRu9iTm0SdE0I8_xJYDoZahQnalZqF
+
+
 ## Overview
 ContentCraft.ai is an AI-powered content generation platform designed to create engaging content for social media platforms like LinkedIn, Instagram, and Twitter. It leverages a fine-tuned GPT-2 model to tailor content according to the specific audience and purpose of each platform, enhancing user engagement and optimizing content creation efficiency.
 
